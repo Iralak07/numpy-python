@@ -51,7 +51,33 @@ La clase de matriz de NumPy se llama ndarray. También es conocido por el alias 
               print(a.size) # Resultado 15 > el número total de elementos de la matriz.
               
 
-  
+# Creacion de arrays
+
+  Puede crear una matriz a partir de una lista [1,2,3,4] o tupla (1,2,3,4) normal de Python.
+
+          import numpy as np
+
+          a = np.array([2, 3, 4])
+          
+          print(a)
+          print(type(a))
+
+          '''
+          [1 2 3 4]
+          <type 'numpy.ndarray'>
+          '''
+
+          b = np.array([(1,2,3,4)])
+          print(a)
+          print(a.shape)
+          '''
+            [[1 2 3 4]]
+            (1, 4)
+          '''
+
+
+Para crear secuencias de números, NumPy proporciona la función 'arange' que es análogo a range incorporado en Python, pero devuelve un formación. 
+
 # Diferencia entre matrices unidimensionales y bidimensionales en NumPy;
 
 # Cómo aplicar algunas operaciones de álgebra lineal a n-dimensionales matrices sin usar bucles for;
