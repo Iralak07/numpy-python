@@ -85,3 +85,10 @@ Para crear secuencias de números, NumPy proporciona la función 'arange' que es
           '''
 
 Vemos que ha crado un array de una dimension, con 8 elementos, esto en razon que el primer argumento que le hemos pasado, significa el numero desde donde comenzara a generase, el segundo argumento es el numero hasta donde se generara, en este caso 49 ya que 50 se excluye, y por ultimo le hemos indicado que esos numeros generados sean de a 5, es decir si no le hubieramos pasado ese argumento, generaria una lista [10, 11,12,..,49]. 
+
+
+
+# Operaciones basicas
+
+Los operadores aritméticos en las matrices se aplican por elementos . Una nueva matriz es creado y llenado con el resultado. 
+
