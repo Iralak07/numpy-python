@@ -78,8 +78,10 @@ La clase de matriz de NumPy se llama ndarray. También es conocido por el alias 
 
 Para crear secuencias de números, NumPy proporciona la función 'arange' que es análogo a range incorporado en Python, pero devuelve un formación. 
 
-# Diferencia entre matrices unidimensionales y bidimensionales en NumPy;
+          c = np.arange(10, 50, 5)
+          print(c)
+          ''' Resultado
+          [10 15 20 25 30 35 40 45]
+          '''
 
-# Cómo aplicar algunas operaciones de álgebra lineal a n-dimensionales matrices sin usar bucles for;
-
-# Las propiedades de ejes y formas para matrices n-dimensionales.
+Vemos que ha crado un array de una dimension, con 8 elementos, esto en razon que el primer argumento que le hemos pasado, significa el numero desde donde comenzara a generase, el segundo argumento es el numero hasta donde se generara, en este caso 49 ya que 50 se excluye, y por ultimo le hemos indicado que esos numeros generados sean de a 5, es decir si no le hubieramos pasado ese argumento, generaria una lista [10, 11,12,..,49]. 
