@@ -89,6 +89,68 @@ Vemos que ha crado un array de una dimension, con 8 elementos, esto en razon que
 
 
 # Operaciones basicas
+Los operadores aritméticos en las matrices se aplican por elementos. Una nueva matriz es creado y llenado con el resultado. 
 
-Los operadores aritméticos en las matrices se aplican por elementos . Una nueva matriz es creado y llenado con el resultado. 
+`#` Suma
 
+        arr_1 = np.array([1,2,3,4])
+        print('arr_1',arr_1)
+        arr_2 = np.arange(4)
+        print('arr_2',arr_2)
+        
+        suma = arr_1 + arr_2
+        print("Restulatado suma de arrays (arr_1 + arr_2): ",suma)
+        
+        '''
+        ('arr_1', array([1, 2, 3, 4]))
+        ('arr_2', array([0, 1, 2, 3]))
+        ('Restulatado suma de arrays (arr_1 + arr_2): ', array([1, 3, 5, 7]))
+        '''
+
+Como se observa, la operacion de suma, ha generado una nueva matriz con la suma de cada uno de sus elementos.
+
+`#` Resta
+
+Utilizando las mismas variables definidas
+  
+          resta = arr_1 - arr_2
+          print("Restulatado resta de arrays (arr_1 - arr_2): ",resta)
+          
+          '''
+          ('arr_1', array([1, 2, 3, 4]))
+          ('arr_2', array([0, 1, 2, 3]))
+          ('Restulatado resta de arrays (arr_1 - arr_2): ', array([1, 1, 1, 1]))
+          '''
+
+`#` Multiplicacion
+
+            multiplicacion = arr_1 * 2
+            print("Restulatado de la multiplicacion de un array por 2: ",multiplicacion)
+
+            '''
+            ('Restulatado de la multiplicacion de un array por 2: ', array([2, 4, 6, 8]))
+            '''
+
+            multiplicacion = arr_1 * arr_2
+            print("Restulatado de la multiplicacion de un array por otro array: ",multiplicacion)
+
+            '''
+            print anterior
+            ('arr_1', array([1, 2, 3, 4]))
+            ('arr_2', array([0, 1, 2, 3]))
+                      array([ 0,  2,  6, 12]) >>> Se puede observar claramente, como cada elemento de un array multiplica, un elemento del               siguiente array
+
+            Resultado
+            ('Restulatado de la multiplicacion de un array por otro array: ', array([ 0,  2,  6, 12]))
+            '''
+`#` Comparacion
+
+            comparacion = arr_1 == 4
+            print(comparacion)
+            
+            '''
+            ('arr_1', array([1, 2, 3, 4]))
+            [False False False  True]
+            '''
+
+Estas son algunas de las operaciones basicas, excepcionalmente existen operadores que no generan un nuevo array sino que modifica uno existente, 
