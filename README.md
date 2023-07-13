@@ -153,4 +153,22 @@ Utilizando las mismas variables definidas
             [False False False  True]
             '''
 
-Estas son algunas de las operaciones basicas, excepcionalmente existen operadores que no generan un nuevo array sino que modifica uno existente, 
+Estas son algunas de las operaciones basicas, excepcionalmente existen operadores que no generan un nuevo array sino que modifica uno existente, tales como `+=y` `*=`.
+
+            arr_ones = np.ones((2, 3), dtype=int)
+            print(arr_ones)
+            '''
+            [[1 1 1]
+             [1 1 1]]
+            '''
+            
+            arr_ones *=3
+            
+            print(arr_ones)
+            '''
+            [[3 3 3]
+             [3 3 3]]
+            '''
+
+Rapidamente haremos un descripcion de lo que hicimos, primeramente, crearmos un array, con dos filas y tres columnas, por lo tanto, al tener filas y columnas, seria un array de 2 dimensiones o ejes, luego, le decimos que es de tipo entero, y con la funcion ones lo que hacemos es rellenar ese array con 1 (unos). Luego al array arr_ones con el operador `*=` lo multiplicamos por 3, lo que h lg bbb
+ 
