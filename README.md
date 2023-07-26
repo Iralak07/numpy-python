@@ -172,5 +172,5 @@ Estas son algunas de las operaciones basicas, excepcionalmente existen operadore
 
 Rapidamente haremos un descripcion de lo que hicimos, primeramente, crearmos un array, con dos filas y tres columnas, por lo tanto, al tener filas y columnas, seria un array de 2 dimensiones o ejes, luego, le decimos que es de tipo entero, y con la funcion ones lo que hacemos es rellenar ese array con 1 (unos). Luego al array arr_ones con el operador `*=` lo multiplicamos por 3, lo que multiplica cada elemento del array por 3, y como podemos observar, si imprimimos nuevamente la variable arr_ones vemos que se ha modificado su valor, por lo tanto lo que hace este operador es modificar el array original. 
 
-
+# Indexación, segmentación e iteración
  
